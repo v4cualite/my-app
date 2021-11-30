@@ -5,7 +5,7 @@ function App() {
     const myName = "Sergej"
     return (
         <div className="App">
-            <header className="flex mh-100 flex-col bg-blue-400 items-center justify-center fs-calc(10px+2vmin) color-white">
+            <header className="flex mh-100 flex-col bg-blue-400 items-center justify-center fz-calc(10px + 2vmin) color-white">
                 <img src={logo} className="h-40 animate-spin " alt="logo" />
                 <p className="text-red-400"> Hello, {myName}.</p>
                 <a
