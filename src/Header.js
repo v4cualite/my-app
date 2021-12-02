@@ -8,7 +8,13 @@ function Header(props) {
     return (
         <header className="flex min-h-screen flex-col bg-blue-400 items-center justify-center text-4xl">
             <img src={logo} className="h-40 animate-spin " alt="logo" />
-            <p className="text-red-400"> Hello, {props.myName || "world"}.</p>
+            <input
+                type="text"
+                value={myName}
+                onChange={(e) => setMyName(e.target.value)}
+                className="text-red-400 text-center"
+            ></input>
+            <p className="text-red-400"> Hello, {myName || "world"}.</p>
             <a
                 className="text-black-900"
                 href="https://reactjs.org"
