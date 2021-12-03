@@ -6,6 +6,7 @@ import React, { useState } from "react"
 function Header(props) {
     const [myName, setMyName] = useState(props.myName)
     const [surName, setSurName] = useState("")
+
     return (
         <header className="flex min-h-screen flex-col bg-blue-400 items-center justify-center text-4xl">
             <img src={logo} className="h-40 animate-spin " alt="logo" />
@@ -29,7 +30,9 @@ function Header(props) {
                     />
                 </label>
             </div>
-            <p className="text-red-400">Hello, {myName + " " + surName}.</p>
+            <p className="text-red-400 text-center">
+                {`Hello,  ${myName} ${surName}.`}
+            </p>
             <p>{props.children}</p>
             <a
                 className="text-black-900"
