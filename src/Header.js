@@ -29,7 +29,7 @@ function Header(props) {
                     />
                 </label>
             </div>
-            <p className="text-red-400">Hello, {myName + surName}.</p>
+            <p className="text-red-400">Hello, {myName + " " + surName}.</p>
             <p>{props.children}</p>
             <a
                 className="text-black-900"
